@@ -1,11 +1,11 @@
 name          := "joiner"
-organization  := "ohnosequences"
+organization  := "com.miodx.clonomap"
 description   := "joiner project"
 
 bucketSuffix  := "era7.com"
 
 libraryDependencies ++= Seq(
-  "ohnosequences" %% "fastarious" % "0.11.0"
+  "com.miodx.clonomap" %% "fastarious" % "0.12.0"
 )
 // shows time for each test:
 testOptions in Test += Tests.Argument("-oD")
