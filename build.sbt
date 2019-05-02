@@ -1,5 +1,6 @@
 name          := "joiner"
 organization  := "com.miodx.clonomap"
+version       := "0.1.4"
 description   := "joiner project"
 
 bucketSuffix  := "era7.com"
