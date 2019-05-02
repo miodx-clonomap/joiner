@@ -6,7 +6,8 @@ description   := "joiner project"
 bucketSuffix  := "era7.com"
 
 libraryDependencies ++= Seq(
-  "com.miodx.clonomap" %% "fastarious" % "0.12.0"
+  "com.miodx.clonomap" %% "fastarious" % "0.12.0",
+  "org.typelevel"      %% "spire"      % "0.16.1"
 )
 // shows time for each test:
 testOptions in Test += Tests.Argument("-oD")
