@@ -2,12 +2,14 @@ name          := "joiner"
 organization  := "com.miodx.clonomap"
 version       := "0.1.4"
 description   := "joiner project"
+scalaVersion  := "2.11.11"
 
 bucketSuffix  := "era7.com"
 
 libraryDependencies ++= Seq(
-  "com.miodx.clonomap" %% "fastarious" % "0.12.0",
-  "org.typelevel"      %% "spire"      % "0.16.1"
+  "com.miodx.common" %% "fastarious" % "0.11.0",
+  "org.typelevel"    %% "spire"      % "0.16.1",
+  "org.scalatest"    %% "scalatest"  % "3.0.5"
 )
 // shows time for each test:
 testOptions in Test += Tests.Argument("-oD")
@@ -21,7 +23,9 @@ wartremoverErrors in (Compile, compile) := Seq()
 
 
 // // For resolving dependency versions conflicts:
-// dependencyOverrides ++= Set()
+dependencyOverrides ++= Seq(
+  "org.typelevel" %% "machinist" % "0.6.1"
+)
 
 // // If you need to deploy this project as a Statika bundle:
 // generateStatikaMetadataIn(Compile)
